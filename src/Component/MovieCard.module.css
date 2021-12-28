@@ -39,7 +39,7 @@ body{
     }
     @media screen and (max-width: 1200px) {
       .gridContainer {
-        width: 150;
+        width: 300;
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
