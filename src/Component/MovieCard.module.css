@@ -50,6 +50,6 @@ body{
         width: 150;
         display: grid;
         grid-template-columns: auto;
-        justify-content: center;
+        justify-content: '';
       }
     }
