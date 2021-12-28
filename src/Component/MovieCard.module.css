@@ -37,3 +37,19 @@ body{
       max-width:300px;
       word-wrap:break-word;
     }
+    @media screen and (max-width: 1200px) {
+      .gridContainer {
+        width: 150;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+      }
+    }
+    @media screen and (max-width: 973px) {
+      .gridContainer {
+        width: 150;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+      }
+    }
