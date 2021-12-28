@@ -96,7 +96,8 @@ const MovieCard = () => {
                   }}
                 >
                   <img src = {dataVals.Poster} height = "auto" width = "auto" />
-                  {dataVals.Title}
+                  <div>{dataVals.Title}</div>
+                  
                 </FrontSide>
                 <BackSide style={{ backgroundColor: "#222",color:"#FFD700" }}>
                   <div>
