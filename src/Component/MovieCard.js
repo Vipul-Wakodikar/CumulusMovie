@@ -87,7 +87,7 @@ const MovieCard = () => {
                 // if you pass isFlipped prop component will be controlled component.
                 // and other props, which will go to div
                 className={`mt-3 ${styles.gridItem}`}
-                style={{ width: "300", height: "400" }} /// these are optional style, it is not necessary
+                style={{ maxWidth: "300", height: "400" }} /// these are optional style, it is not necessary
               >
                 <FrontSide
                   style={{
@@ -95,7 +95,7 @@ const MovieCard = () => {
                     color: "#FFD700"
                   }}
                 >
-                   <img src = {dataVals.Poster} height = "auto" width = "300" /> <br />
+                  <img src = {dataVals.Poster} height = "auto" width = "300" />
                   {dataVals.Title}
                 </FrontSide>
                 <BackSide style={{ backgroundColor: "#222",color:"#FFD700" }}>
