@@ -101,7 +101,7 @@ const MovieCard = () => {
                 <BackSide style={{ backgroundColor: "#222",color:"#FFD700" }}>
                   <div>
                       <div>Released on: {dataVals.Released} Rated : {dataVals.Rated}</div><br />
-                      <div>Released on: {dataVals.Actors}</div><br />
+                      <div>Cast: {dataVals.Actors}</div><br />
                       <span>Plot :{dataVals.Plot}</span>
                         <br />
                       <span>Rating :{dataVals.Ratings[0].Source}:⭐{dataVals.Ratings[0].Value}</span>
