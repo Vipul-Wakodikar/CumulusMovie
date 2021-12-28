@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CumulusMovie/static/css/main.a96caeb1.css",
-    "main.js": "/CumulusMovie/static/js/main.27dcb54b.js",
+    "main.css": "/CumulusMovie/static/css/main.7c2d5981.css",
+    "main.js": "/CumulusMovie/static/js/main.2d74b1f2.js",
     "static/js/787.139580b0.chunk.js": "/CumulusMovie/static/js/787.139580b0.chunk.js",
     "static/media/logo.svg": "/CumulusMovie/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/CumulusMovie/index.html",
-    "main.a96caeb1.css.map": "/CumulusMovie/static/css/main.a96caeb1.css.map",
-    "main.27dcb54b.js.map": "/CumulusMovie/static/js/main.27dcb54b.js.map",
+    "main.7c2d5981.css.map": "/CumulusMovie/static/css/main.7c2d5981.css.map",
+    "main.2d74b1f2.js.map": "/CumulusMovie/static/js/main.2d74b1f2.js.map",
     "787.139580b0.chunk.js.map": "/CumulusMovie/static/js/787.139580b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a96caeb1.css",
-    "static/js/main.27dcb54b.js"
+    "static/css/main.7c2d5981.css",
+    "static/js/main.2d74b1f2.js"
   ]
 }
