@@ -98,7 +98,7 @@ const MovieCard = () => {
                   <img src = {dataVals.Poster} height = "auto" width = "auto" />
                   <div>
                     {dataVals.Title}
-                    {dataVals.Title.length > 42 ? (<br></br>):(<p></p>)}
+                    {dataVals.Title.length > 42 ? (<><h1>Yo!</h1><br></br></>):(<p></p>)}
                   </div>
                   
                 </FrontSide>
