@@ -96,19 +96,19 @@ const MovieCard = () => {
                   }}
                 >
                   <img src = {dataVals.Poster} height = "auto" width = "auto" />
-                  <div>
+                  <div className={styles.movieTitle}>
                     {dataVals.Title}
-                    {dataVals.Title.length > 42 ? (<><h1>Yo!</h1><br></br></>):(<p></p>)}
                   </div>
                   
                 </FrontSide>
                 <BackSide style={{ backgroundColor: "#222",color:"#FFD700" }}>
                   <div>
                       <div>Released on: {dataVals.Released} Rated : {dataVals.Rated}</div><br />
+                      <span>Rating :{dataVals.Ratings[0].Source}:⭐{dataVals.Ratings[0].Value}</span><br />
                       <div>Cast: {dataVals.Actors}</div><br />
                       <span>Plot :{dataVals.Plot}</span>
                         <br />
-                      <span>Rating :{dataVals.Ratings[0].Source}:⭐{dataVals.Ratings[0].Value}</span>
+                      
                       
                   </div>
                 </BackSide>

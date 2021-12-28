@@ -33,3 +33,7 @@ body{
         padding: 0;
         margin: 0;
     }
+    .movieTitle{
+      max-width:300px;
+      word-wrap:break-word;
+    }
