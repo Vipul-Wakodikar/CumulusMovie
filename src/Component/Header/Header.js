@@ -21,7 +21,7 @@ const Header = () => {
         }}
         placeholder="Select category and type name or genre"
       />
-      <div>{category}{searchText}</div>
+      <div>{category} {searchText}</div>
     </div>
   );
 };

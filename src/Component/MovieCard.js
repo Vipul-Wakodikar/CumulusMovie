@@ -15,7 +15,7 @@ const MovieCard = () => {
   const [searchText, setSearchText] = useState("");
   const [page, setPage] = React.useState(1);
   const [showItems, setShowItems] = useState(0);
-  const [category, setCategory] = useState("title");
+  const [category, setCategory] = useState("Title");
   const handlePageChange = (event, value) => {
     setPage(value);
     if (page == 1) {
