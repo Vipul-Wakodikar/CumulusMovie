@@ -1,7 +1,12 @@
 .headerTitle{
     background-color: black;
     color: #fff;
+    border: none;
 }
 .dropDown{
     padding: 2px;
+    border: none;
+}
+.dropDown:active{
+    border: none;
 }

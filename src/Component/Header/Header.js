@@ -1,9 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
 import styles from "./Header.module.css";
 import { changeCategories, changeVals } from "./changeVals";
+import { Checkbox } from "@mui/material";
+import ShowContent from "./ShowContent";
+
 const Header = () => {
   const { searchText, setSearchText } = useContext(changeVals);
-  const { category,setCategory} = useContext(changeCategories)
+  const {value1,value2} = useContext(changeCategories);
+  const { category,setCategory} = value1;
+  const {director,setDirector} = value2;
+  const [showItems,setShowItems] = useState(false);
   return (
     <div className={styles.headerTitle} style={{ backgroundColor: "#000" }}>
       <h4>Credit: Cumulus</h4>
@@ -21,6 +27,15 @@ const Header = () => {
         }}
         placeholder="Select category and type name or genre"
       />
+      <div onClick={(e)=>setShowItems(!showItems)}>
+      Show content Filter{showItems?(<span>⏬</span>):(<span>⏩</span>)}
+      </div>
+      { showItems && (
+        <ShowContent />
+      )}
+      
+      
+      
       <div>{category} {searchText}</div>
     </div>
   );

@@ -9,6 +9,7 @@ import Flippy, { FrontSide, BackSide } from "react-flippy";
 import { changeCategories, changeVals } from "../Header/changeVals";
 import Header from "../Header/Header";
 import { List, Paper } from "@mui/material";
+import ShowContent from "../Header/ShowContent";
 const MovieCard = () => {
   const [Information, setInformation] = useState();
   const [isLoading, setIsLoading] = useState(true);
@@ -16,6 +17,9 @@ const MovieCard = () => {
   const [page, setPage] = React.useState(1);
   const [showItems, setShowItems] = useState(0);
   const [category, setCategory] = useState("Title");
+  const [director,setDirector] = useState(false);
+  const [alwaysOff,setAlwaysOff] = useState(false);
+
   const handlePageChange = (event, value) => {
     setPage(value);
     if (page == 1) {
@@ -47,8 +51,9 @@ const MovieCard = () => {
   return (
     <>
       <changeVals.Provider value={{ searchText, setSearchText }}>
-        <changeCategories.Provider value={{ category, setCategory }}>
+        <changeCategories.Provider value={{ value1:{category, setCategory}, value2:{director, setDirector} }}>
           <Header />
+          {alwaysOff && (<ShowContent />)}
         </changeCategories.Provider>
       </changeVals.Provider>
       <div>Searched text is: {searchText}</div>
@@ -56,7 +61,7 @@ const MovieCard = () => {
         {searchText.length > 0 ? (
           <>
             {isLoading ? (
-              <h1>Loading</h1>
+              <h1>Loading...</h1>
             ) : (
               <>
                 {Information.map((dataVals) => {
@@ -244,6 +249,9 @@ const MovieCard = () => {
                               <br />
                               <span>Plot :{dataVals.Plot}</span>
                               <br />
+                              {director && (
+                                <span>{dataVals.Director}</span>
+                              )}
                             </div>
                           </BackSide>
                         </Flippy>
