@@ -74,3 +74,11 @@ body{
         justify-content: '';
       }
     }
+    @media screen and (min-width: 1400px) {
+      .gridContainer {
+        width: 300;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+      }
+    }

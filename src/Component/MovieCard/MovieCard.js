@@ -6,8 +6,8 @@ import styles from "./MovieCard.module.css";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import Flippy, { FrontSide, BackSide } from "react-flippy";
-import { changeCategories, changeVals } from "./Header/changeVals";
-import Header from "./Header/Header";
+import { changeCategories, changeVals } from "../Header/changeVals";
+import Header from "../Header/Header";
 import { List, Paper } from "@mui/material";
 const MovieCard = () => {
   const [Information, setInformation] = useState();
@@ -268,6 +268,7 @@ const MovieCard = () => {
             style={{ backgroundColor: "#FFD700" }}
           />
         </Stack>
+        
       </div>
     </>
   );
