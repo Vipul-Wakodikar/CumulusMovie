@@ -19,7 +19,7 @@ const MovieCard = () => {
   const [category, setCategory] = useState("Title");
   const [director,setDirector] = useState(false);
   const [alwaysOff,setAlwaysOff] = useState(false);
-
+  const [plot,setPlot] = useState(false);
   const handlePageChange = (event, value) => {
     setPage(value);
     if (page == 1) {
@@ -51,7 +51,7 @@ const MovieCard = () => {
   return (
     <>
       <changeVals.Provider value={{ searchText, setSearchText }}>
-        <changeCategories.Provider value={{ value1:{category, setCategory}, value2:{director, setDirector} }}>
+        <changeCategories.Provider value={{ value1:{category, setCategory}, value2:{director, setDirector},value3:{plot,setPlot} }}>
           <Header />
           {alwaysOff && (<ShowContent />)}
         </changeCategories.Provider>
@@ -247,11 +247,8 @@ const MovieCard = () => {
                               <br />
                               <div>Cast: {dataVals.Actors}</div>
                               <br />
-                              <span>Plot :{dataVals.Plot}</span>
-                              <br />
-                              {director && (
-                                <span>{dataVals.Director}</span>
-                              )}
+                              {plot &&(<><span>Plot :{dataVals.Plot}</span><br /></>)}
+                              {director && (<><span>Director: {dataVals.Director}</span><br /></>)}
                             </div>
                           </BackSide>
                         </Flippy>
