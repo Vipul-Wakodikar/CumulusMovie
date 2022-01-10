@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CumulusMovie/static/css/main.630e9461.css",
+    "main.css": "/CumulusMovie/static/css/main.f2d0bfe5.css",
     "main.js": "/CumulusMovie/static/js/main.ddfbab46.js",
     "static/js/787.139580b0.chunk.js": "/CumulusMovie/static/js/787.139580b0.chunk.js",
     "static/media/logo.svg": "/CumulusMovie/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/CumulusMovie/index.html",
-    "main.630e9461.css.map": "/CumulusMovie/static/css/main.630e9461.css.map",
+    "main.f2d0bfe5.css.map": "/CumulusMovie/static/css/main.f2d0bfe5.css.map",
     "main.ddfbab46.js.map": "/CumulusMovie/static/js/main.ddfbab46.js.map",
     "787.139580b0.chunk.js.map": "/CumulusMovie/static/js/787.139580b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.630e9461.css",
+    "static/css/main.f2d0bfe5.css",
     "static/js/main.ddfbab46.js"
   ]
 }
